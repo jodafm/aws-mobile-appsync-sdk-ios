@@ -22,7 +22,7 @@ internal let NoOpOperationString = "No-op"
 /// Delegates will be notified when a mutation is performed from the `mutationCallback`. This pattern is necessary
 /// in order to provide notifications of mutations which are performed after an app restart and the initial callback
 /// context has been lost.
-swiftlint:disable class_delegate_protocol
+// swiftlint:disable class_delegate_protocol
 public protocol AWSAppSyncOfflineMutationDelegate {
     func mutationCallback(recordIdentifier: String, operationString: String, snapshot: Snapshot?, error: Error?)
 }
